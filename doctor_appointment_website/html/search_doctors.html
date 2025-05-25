@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Doctors - Doctor Appointment System</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="search_doctors.html">Find a Doctor</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Find a Doctor</h1>
+        <section class="search-filters">
+            <h2>Filter Your Search</h2>
+            <form>
+                <div>
+                    <label for="specialty">Specialty:</label>
+                    <select id="specialty" name="specialty">
+                        <option value="">--Select Specialty--</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="general">General Practice</option>
+                        <!-- Add more common specialties -->
+                    </select>
+                </div>
+                <div>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter city or zip code">
+                </div>
+                <div>
+                    <label for="availability">Availability:</label>
+                    <input type="date" id="availability" name="availability">
+                </div>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+        <section class="search-results">
+            <h2>Search Results</h2>
+            <div>
+                <p>Doctor listings will appear here.</p>
+            </div>
+            <!--
+            <article class="doctor-card">
+                <img src="../images/doctor_placeholder.png" alt="Doctor Name" style="width:100px; height:100px;">
+                <h3>Dr. Jane Doe</h3>
+                <p>Specialty: Cardiology</p>
+                <p>Location: Cityville</p>
+                <a href="doctor_profile.html?id=123">View Profile</a>
+            </article>
+            -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Doctor Appointment System</p>
+    </footer>
+</body>
+</html>
